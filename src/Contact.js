@@ -10,7 +10,7 @@ function Contact(){
             <div className="office"> Our Information</div>
             <div className="squre">
                 <div className="touch">
-                    <div className="email"> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vikaspatidar828@email.com" target="_blank"><MdEmail size={40} color="#EA4335"className="c-icon" /></a>  </div>
+                    <div className="email"> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vikaspatidar828@email.com" target="_blank" rel="noreferrer"><MdEmail size={40} color="#EA4335"className="c-icon" /></a>  </div>
                      <div className="mesg">vikaspatidar828<br />&nbsp;&nbsp;@gamil.com</div>
                 </div>
                 <div className="touch">
@@ -24,11 +24,11 @@ function Contact(){
             </div>
             <div className="squre">
                 <div className="touch">
-                      <div className="email"> <a href="https://maps.app.goo.gl/cKe5YANhtosFYzJM7" target="_blank"><MdLocationOn size={40} color="#FF4C4C" className="c-icon"/> </a> </div>
+                      <div className="email"> <a href="https://maps.app.goo.gl/cKe5YANhtosFYzJM7" target="_blank" rel="noreferrer"><MdLocationOn size={40} color="#FF4C4C" className="c-icon"/> </a> </div>
                      <div className="mesg"> 189 bigali nagar <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indore</div>
                 </div>
                 <div className="touch">
-                     <div className="email"> <a href="https://www.linkedin.com/in/vikas-patidar/" target="_blank"><FaLinkedin size={40} color="#0077B5" className="c-icon" /> </a></div>
+                     <div className="email"> <a href="https://www.linkedin.com/in/vikas-patidar/" target="_blank" rel="noreferrer"><FaLinkedin size={40} color="#0077B5" className="c-icon" /> </a></div>
                      <div className="mesg">Vikas patidar</div>
                 </div>
                 <div className="touch">
@@ -52,6 +52,7 @@ function Contact(){
   <button type="submit">Send Message</button>
 
 </form>
+            </div>
          </div>
      </div>
     );
