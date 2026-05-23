@@ -30,15 +30,15 @@ function Footer() {
 
           <div className="social-icons">
 
-            <a href="https://www.linkedin.com/" target="_blank">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
 
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
 

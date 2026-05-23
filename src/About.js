@@ -15,7 +15,7 @@ function About() {
         <FaTwitter size={30} />
             </div>
             <div className="button">
-                <button className="btn3"><a href="/resume.pdf" target="_blank">Download CV</a></button>
+                <button className="btn3"><a href="/resume.pdf" target="_blank" rel="noreferrer">Download CV</a></button>
                 
             </div>
             </div>
