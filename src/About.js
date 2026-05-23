@@ -4,7 +4,6 @@ import react from "./react.png";
 import frontend from "./frontend.png"; 
 import education from "./education.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"; 
-import vikas from "./vikas.png";
 function About() {
     return(
         <div  id="about"  className="main1">
