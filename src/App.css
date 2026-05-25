@@ -1032,8 +1032,178 @@ background:#3b82f6;
 transform:translateY(-5px);
 }
 
-/* Mobile / Responsive rules */
-@media (max-width: 768px) {
+/* =====================================================
+   RESPONSIVE DESIGN - MOBILE FIRST APPROACH
+   Breakpoints: 320px, 480px, 768px, 1024px, 1440px
+===================================================== */
+
+/* ==================== 320px - Extra Small Phones ==================== */
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 13px;
+  }
+  
+  .head {
+    padding: 0 12px;
+    height: 55px;
+  }
+  
+  .logo {
+    min-width: auto;
+    font-size: 16px;
+  }
+  
+  .vikas {
+    font-size: 24px;
+  }
+  
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+  }
+  
+  .mobile-menu {
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .main, .main1 {
+    padding: 80px 12px 20px 12px;
+    margin-top: 0;
+  }
+  
+  .con {
+    padding: 16px 10px;
+  }
+  
+  .con h3 {
+    font-size: 14px;
+  }
+  
+  .btn1, .btn2 {
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  
+  .photo img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .skill {
+    padding: 16px 0;
+  }
+  
+  .row1, .row2, .row3 {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  
+  .r1 h3 {
+    font-size: 18px;
+  }
+  
+  .project {
+    padding: 16px 0;
+  }
+  
+  .pro {
+    font-size: 24px;
+    padding: 16px 10px;
+  }
+  
+  .card {
+    gap: 30px;
+    padding: 0 10px;
+  }
+  
+  .subcard {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .one, .one img {
+    height: 130px;
+  }
+  
+  .two {
+    font-size: 16px;
+  }
+  
+  .three {
+    font-size: 11px;
+  }
+  
+  .four button {
+    width: 70px;
+    height: 28px;
+    font-size: 11px;
+  }
+  
+  .contact {
+    padding: 16px 10px;
+  }
+  
+  .Get {
+    font-size: 24px;
+    padding: 12px 0;
+  }
+  
+  .office {
+    font-size: 16px;
+  }
+  
+  .squre {
+    gap: 8px;
+  }
+  
+  .touch {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .input {
+    padding: 12px;
+    border-radius: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  .footer {
+    padding: 16px 0;
+  }
+  
+  .footer-box, .footer-box1 {
+    padding: 12px;
+  }
+  
+  .bottom-footer p {
+    font-size: 11px;
+  }
+}
+
+/* ==================== 480px - Small Phones ==================== */
+@media screen and (max-width: 480px) {
   .head, .skill, .project, .contact, .footer, .main, .main1 {
     width: 100%;
   }
