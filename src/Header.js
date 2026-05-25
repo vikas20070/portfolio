@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div class="head">
+    <div className="head">
       <div className="logo">
          <span className="vikas">Vikas</span>.dev
       </div>
@@ -12,8 +12,8 @@ function Header() {
         <a href="#contact">CONTACT US</a>
       </div>
       <div className="btn">
-        <button> <a href="#contact">Hire Me</a></button>
-         <button> <a href="tel:+918109836169">Call Me</a></button>
+        <button><a href="#contact">Hire Me</a></button>
+        <button><a href="tel:+918109836169">Call Me</a></button>
       </div>
     </div>
   );

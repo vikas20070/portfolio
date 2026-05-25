@@ -21,7 +21,7 @@ function About() {
             </div>
             <div className="con1">
              <div>
-              <h2>About</h2>
+              <h2>About me</h2>
               <hr/>
               <p>I'm Vikas Patidar, a passionate Frontend Developer who loves
                 creating<br /> modern and responsive websites. I enjoy turning ideas
