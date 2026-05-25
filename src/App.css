@@ -879,6 +879,67 @@ transform:translateY(-5px);
   .btn1, .btn2{ width: 140px; height: 36px; margin: 8px 6px; }
   .photo{ width: 100%; padding: 12px 0; display:flex; justify-content:center; }
   .photo img{ width: 220px; height: 220px; margin-left: 0; }
+  
+  /* Project responsive */
+  .project{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .pro{
+    width: 100%;
+    padding: 20px 16px;
+    font-size: 32px;
+    box-sizing: border-box;
+  }
+  .card{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .subcard{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .subcard:hover{
+    width: 100%;
+    max-width: 350px;
+  }
+  .one{
+    width: 100%;
+    height: 200px;
+  }
+  .one img{
+    width: 100%;
+    height: 200px;
+  }
+  .one img:hover{
+    width: 100%;
+  }
+  .two{
+    width: 100%;
+    font-size: 22px;
+  }
+  .three{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .four{
+    width: 100%;
+    padding: 10px 0;
+  }
+  .four button{
+    width: 90px;
+    height: 35px;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -888,6 +949,38 @@ transform:translateY(-5px);
   .photo img{ width: 160px; height: 160px; }
   .btn1, .btn2{ width: 120px; font-size: 14px; }
   .main, .main1{ padding-top: 80px; }
+  
+  /* Project responsive for small screens */
+  .pro{
+    font-size: 26px;
+    padding: 16px 12px;
+  }
+  .card{
+    padding: 0 12px;
+  }
+  .subcard{
+    max-width: 100%;
+  }
+  .one{
+    height: 150px;
+  }
+  .one img{
+    height: 150px;
+  }
+  .two{
+    font-size: 18px;
+    height: 50px;
+  }
+  .three{
+    font-size: 12px;
+    height: auto;
+    padding: 8px;
+  }
+  .four button{
+    width: 80px;
+    height: 32px;
+    font-size: 12px;
+  }
 }
 
 .footer-box ul{
