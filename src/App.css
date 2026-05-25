@@ -896,15 +896,16 @@ transform:translateY(-5px);
     width: 100%;
     height: auto;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     padding: 0 16px;
     box-sizing: border-box;
   }
   .subcard{
-    width: 100%;
+    width: 80%;
     max-width: 350px;
     height: auto;
     margin: 0 auto;
+    gap: 20px;
   }
   .subcard:hover{
     width: 100%;
@@ -939,6 +940,248 @@ transform:translateY(-5px);
     width: 90px;
     height: 35px;
     font-size: 13px;
+  }
+
+  /* Skill section responsive */
+  .skill{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .row1{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px 16px;
+    box-sizing: border-box;
+  }
+  .r1, .r2{
+    width: 100%;
+    height: auto;
+  }
+  .r1 h3{
+    padding-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  .r2{
+    padding: 0;
+  }
+  .r2 p{
+    font-size: 14px;
+    padding: 8px 16px;
+    text-align: center;
+  }
+  .row2{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  .row3{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .r3{
+    width: 100%;
+    padding: 0;
+  }
+
+  /* About section responsive */
+  .image{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .men{
+    width: 100%;
+    height: 250px;
+  }
+  .icon{
+    width: 100%;
+    justify-content: center;
+    padding: 16px 0;
+  }
+  .icon svg{
+    width: 28px;
+    height: 28px;
+  }
+  .button{
+    width: 100%;
+    text-align: center;
+  }
+  .btn3{
+    width: 150px !important;
+  }
+  .con1{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .con1 h2{
+    font-size: 26px;
+    text-align: center;
+  }
+  .mainbox{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .box{
+    width: 100%;
+    height: auto;
+    padding: 12px;
+  }
+  .edu{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .box1{
+    width: 100%;
+    height: auto;
+  }
+  .log{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+  .info{
+    width: 100%;
+    height: auto;
+  }
+
+  /* Contact section responsive */
+  .contact{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 16px;
+    box-sizing: border-box;
+  }
+  .inf{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .Get{
+    width: 100%;
+    font-size: 32px;
+    padding: 16px 0;
+    text-align: center;
+  }
+  .office{
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .squre{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    padding: 12px 0;
+  }
+  .touch{
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+  .email{
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  .c-icon{
+    width: 50px;
+    height: 40px;
+  }
+  .mesg{
+    width: auto;
+    font-size: 13px;
+  }
+  .form{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .input{
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: auto;
+  }
+  .contact-form{
+    max-width: 100%;
+  }
+  .contact-form input,
+  .contact-form textarea{
+    width: 100%;
+  }
+
+  /* Footer responsive */
+  .footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  .footer-container{
+    padding: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-box{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #334155;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .footer-box h1{
+    padding: 0;
+    padding-right: 0;
+  }
+  .footer-box h2{
+    padding-left: 0;
+  }
+  .footer-box1{
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .footer-box1 h2,
+  .footer-box1 p{
+    padding-left: 0;
+  }
+  .line{
+    width: 50px;
+  }
+  .bottom-footer{
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .bottom-footer h2{
+    font-size: 24px;
+  }
+  .bottom-footer p{
+    font-size: 14px;
   }
 }
 
@@ -979,6 +1222,57 @@ transform:translateY(-5px);
   .four button{
     width: 80px;
     height: 32px;
+    font-size: 12px;
+  }
+
+  /* Skill responsive for small screens */
+  .r1 h3{
+    font-size: 20px;
+  }
+  .r2 p{
+    font-size: 12px;
+  }
+  .row1{
+    padding: 8px 12px;
+  }
+  .row2, .row3{
+    padding: 8px 12px;
+  }
+
+  /* About responsive for small screens */
+  .men{
+    height: 200px;
+  }
+  .con1 h2{
+    font-size: 22px;
+  }
+  .box, .box1{
+    padding: 8px;
+  }
+
+  /* Contact responsive for small screens */
+  .Get{
+    font-size: 26px;
+  }
+  .office{
+    font-size: 18px;
+  }
+  .mesg{
+    font-size: 12px;
+  }
+  .contact-form input,
+  .contact-form textarea{
+    font-size: 13px;
+  }
+
+  /* Footer responsive for small screens */
+  .footer{
+    padding: 12px;
+  }
+  .footer-box, .footer-box1{
+    padding: 12px;
+  }
+  .bottom-footer p{
     font-size: 12px;
   }
 }
