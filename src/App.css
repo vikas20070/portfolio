@@ -1,10 +1,18 @@
 
-body{
-margin:0;
-padding:0;
-overflow-x:hidden;
-width:100%;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: #020617;
+  color: white;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 h1{
 color:blue;
 text-align:center;
@@ -325,6 +333,12 @@ transform:scale(1);
 a{
   text-decoration-line: none;
   color:white;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .main{
@@ -921,7 +935,7 @@ margin:auto;
 .contact-form input,
 .contact-form textarea{
 width:100%;
-paddingavatar:10px;
+padding:10px;
 font-size:15px;      /* text size */
 background:#1e293b;  /* dark background */
 color:white;
@@ -1278,7 +1292,34 @@ transform:translateY(-5px);
   .btn1, .btn2{ width: 140px; height: 36px; margin: 8px 6px; }
   .photo{ width: 100%; padding: 12px 0; display:flex; justify-content:center; }
   .photo img{ width: 220px; height: 220px; margin-left: 0; }
-  
+  .image,
+  .con,
+  .r3,
+  .Get,
+  .office,
+  .squre,
+  .footer,
+  .footer-box,
+  .footer-box1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row1,
+  .row2,
+  .row3,
+  .contact,
+  .skill,
+  .project {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .r2 p{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* Project responsive */
   .project{
     width: 100%;
@@ -1305,6 +1346,7 @@ transform:translateY(-5px);
     height: auto;
     margin: 0 auto;
     gap: 20px;
+    
   }
   .subcard:hover{
     width: 100%;
@@ -1434,11 +1476,15 @@ transform:translateY(-5px);
     height: auto;
     flex-direction: column;
     gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .box{
     width: 100%;
     height: auto;
     padding: 12px;
+  
   }
   .edu{
     width: 100%;
