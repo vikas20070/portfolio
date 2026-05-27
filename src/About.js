@@ -10,7 +10,7 @@ function About() {
             <div className="image">
             <div className="men"></div>
             <div className="icon">
-         <FaFacebook size={50} />
+         <FaFacebook size={30} />
          <FaInstagram size={30} />
         <FaTwitter size={30} />
             </div>

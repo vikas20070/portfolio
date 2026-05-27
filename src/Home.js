@@ -1,4 +1,4 @@
-import vikas from "./vikas.png";
+
 function Home() {
   return (
     <div id="home" className="main"> 
