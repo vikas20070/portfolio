@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -7,14 +7,17 @@ import { MdLocationOn } from "react-icons/md";
 function Contact() {
     const form = useRef();
 
+    useEffect(() => {
+        emailjs.init("hEAXZt9zzEtoawHFj");
+    }, []);
+
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm(
             "service_m5f0vo4",
             "template_e5r0w7q",
-            form.current,
-            "hEAXZt9zzEtoawHFj"
+            form.current
         )
         .then(() => {
             alert("Message sent successfully!");
