@@ -1531,10 +1531,11 @@ transform:translateY(-5px);
     font-size: 32px;
     padding: 16px 0;
     text-align: center;
+    background-color: tomato;
   }
   .office{
     width: 100%;
-    font-size: 25px;
+    font-size: 30px;
     padding: 12px 0;
     text-align: center;
   }
