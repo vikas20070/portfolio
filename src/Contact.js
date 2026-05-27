@@ -16,7 +16,7 @@ function Contact() {
 
         emailjs.sendForm(
             "service_m5f0vo4",
-            "ttemplate_25qxc8r",
+            "template_e5r0w7q",
             form.current
         )
         .then(() => {
@@ -65,11 +65,11 @@ function Contact() {
             <div className="input">
                 <form ref={form} className="contact-form" onSubmit={sendEmail}>
 
-  <input type="text" name="user_name" placeholder="Your Name" required /> <br />
+  <input type="text" name="name" placeholder="Your Name" required /> <br />
 
-  <input type="email" name="user_email" placeholder="Your Email" required />  <br />
+  <input type="email" name="email" placeholder="Your Email" required />  <br />
 
-  <input type="tel" name="user_phone" placeholder="Your Phone Number" required />  <br />
+  <input type="tel" name="phone" placeholder="Your Phone Number" required />  <br />
 
   <textarea name="message" placeholder="Your Message" rows="5" required></textarea>  <br />
 
