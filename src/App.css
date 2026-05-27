@@ -1534,7 +1534,7 @@ transform:translateY(-5px);
   }
   .office{
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     padding: 12px 0;
     text-align: center;
   }
@@ -1547,7 +1547,7 @@ transform:translateY(-5px);
     padding: 12px 0;
   }
   .touch{
-    width: 100%;
+    width: 200px;
     height: auto;
     padding: 12px;
     box-sizing: border-box;
@@ -1564,7 +1564,7 @@ transform:translateY(-5px);
   }
   .mesg{
     width: auto;
-    font-size: 13px;
+    font-size: 16px;
   }
   .form{
     width: 100%;
