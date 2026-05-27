@@ -345,8 +345,8 @@ img{
   width:100%;
   max-width:1050px;
   margin:auto;
-  height: 390px;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./bg.png");
+  height: 430px;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./gb.png");
   background-size:cover;
   background-position:center;
   display: flex;
@@ -445,8 +445,8 @@ scroll-margin-top:60px;
 .photo img{
   width: 330px;
   height: 330px;
-  border: 1px,white ,solid;
-  border-radius: 50%;
+  /* border: 1px,white ,solid; */
+  /* border-radius: 50%; */
   margin-left: 70px;
 }
 
@@ -477,8 +477,8 @@ scroll-margin-top:60px;
 .icon svg{
 color:white;
 border-radius: 10px;
-width: 30px;
-height: 30px;
+width: 40px;
+height: 40px;
 cursor:pointer;
 transition:0.3s;
 background-color: #38bdf8;
@@ -516,6 +516,7 @@ transform:scale(1.2);
   background: linear-gradient(135deg, #38bdf8, #6366f1);
    box-shadow:0 5px 20px rgba(121, 121, 202, 0.5);
    transition:0.3s;
+  margin-top: 20px;
 }
 .btn3:hover{
   color: black;
@@ -868,6 +869,7 @@ scroll-margin-top:60px;
   color: white;
   padding-left: 50px;
   padding-top: 50px;
+  margin-bottom: 20px;
   box-sizing: border-box;
 }
 .office{
@@ -878,6 +880,7 @@ scroll-margin-top:60px;
   font-size: 25px;
   color: white;
    padding-left: 50px;
+   margin-bottom: 10px;
   box-sizing: border-box;
 }
 .squre{
@@ -895,9 +898,11 @@ scroll-margin-top:60px;
 .touch{
   width: 170px;
   height: 120px;
-  /* background-color: #d00c40; */
+  background-color: white;
   border-radius: 15px;
-  border: 1px,white,solid;
+     border-radius:0px 20px 0 20px;
+  border-right: 4px solid #1e90ff;
+  border-bottom: 4px solid #1e90ff;
   
 }
 
@@ -928,8 +933,10 @@ align-items: center;
 .contact-form{
 display:flex;
 flex-direction:column;
+width: 100%;
 max-width:400px;
 margin:auto;
+/* background-color: #1e293b; */
 }
 
 .contact-form input,
@@ -993,7 +1000,7 @@ background:#0ea5e9;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color:black;
   font-size: 18px;
 }
 .footer{

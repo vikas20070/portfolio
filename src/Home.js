@@ -12,12 +12,12 @@ function Home() {
          <p>
          Hi, I'm Vikas Patidar, a passionate Frontend Developer.
          I create modern, responsive and user-friendly websites.
-        I love building clean UI using HTML, CSS, JavaScript and React.
+        I love building clean UI using <span style={{ color: '#007bff' }}>HTML, CSS, JavaScript, Wordpress and React</span>.
         </p>
         <button className="btn1"> <a href="#contact">Hire Me</a></button>
         <button className="btn2"> <a href="#projects">View Projects</a></button>
         </div>
-       <div className="photo"> <img src={vikas} alt="vikas" /></div> 
+       {/* <div className="photo"> <img src={vikas} alt="vikas" /></div>  */}
     </div>
     
   );
