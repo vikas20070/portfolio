@@ -17,7 +17,7 @@ function Home() {
         <button className="btn1"> <a href="#contact">Hire Me</a></button>
         <button className="btn2"> <a href="#projects">View Projects</a></button>
         </div>
-       {/* <div className="photo"> <img src={vikas} alt="vikas" /></div>  */}
+       <div className="photo"></div> 
     </div>
     
   );

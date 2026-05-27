@@ -1,8 +1,29 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
-function Contact(){
+function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "YOUR_SERVICE_ID",
+            "YOUR_TEMPLATE_ID",
+            form.current,
+            "YOUR_PUBLIC_KEY"
+        )
+        .then(() => {
+            alert("Message sent successfully!");
+            form.current.reset();
+        })
+        .catch(() => {
+            alert("Message failed to send. Please try again.");
+        });
+    };
     return(
      <div  id="contact" className="contact">
         <div className="inf">
@@ -39,15 +60,15 @@ function Contact(){
         </div>
          <div className="form">
             <div className="input">
-                <form class="contact-form">
+                <form ref={form} className="contact-form" onSubmit={sendEmail}>
 
-  <input type="text" placeholder="Your Name" required /> <br />
+  <input type="text" name="user_name" placeholder="Your Name" required /> <br />
 
-  <input type="email" placeholder="Your Email" required />  <br />
+  <input type="email" name="user_email" placeholder="Your Email" required />  <br />
 
-  <input type="tel" placeholder="Your Phone Number" required />  <br />
+  <input type="tel" name="user_phone" placeholder="Your Phone Number" required />  <br />
 
-  <textarea placeholder="Your Message" rows="5" required></textarea>  <br />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>  <br />
 
   <button type="submit">Send Message</button>
 
