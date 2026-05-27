@@ -11,10 +11,10 @@ function Contact() {
         e.preventDefault();
 
         emailjs.sendForm(
-            "service_ye25m5s",
+            "service_m5f0vo4",
             "template_e5r0w7q",
             form.current,
-            "YXuI9PiepSxPOepMr_"
+            "hEAXZt9zzEtoawHFj"
         )
         .then(() => {
             alert("Message sent successfully!");
