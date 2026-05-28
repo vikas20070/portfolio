@@ -1531,7 +1531,8 @@ transform:translateY(-5px);
     font-size: 32px;
     padding: 16px 0;
     text-align: center;
-    background-color: tomato;
+    /* background-color: tomato; */
+    height: 40px;
   }
   .office{
     width: 100%;
@@ -1542,7 +1543,9 @@ transform:translateY(-5px);
   .squre{
     width: 100%;
     height: auto;
-    flex-direction: column;
+    /* flex-direction: column; */
+      display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 12px;
     justify-content: center;
     padding: 12px 0;
