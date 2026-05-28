@@ -45,8 +45,7 @@ function Contact() {
                      <div className="email"><a href="https://wa.me/91"><FaWhatsapp size={40} color="#25D366"  className="c-icon"/></a></div>
                      <div className="mesg">+91810983619</div>
                 </div>
-            </div>
-            <div className="squre">
+    
                 <div className="touch">
                       <div className="email"> <a href="https://maps.app.goo.gl/cKe5YANhtosFYzJM7" target="_blank" rel="noreferrer"><MdLocationOn size={40} color="#FF4C4C" className="c-icon"/> </a> </div>
                      <div className="mesg"> 189 bigali nagar <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indore</div>
