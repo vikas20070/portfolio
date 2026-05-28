@@ -1465,8 +1465,9 @@ transform:translateY(-5px);
     padding: 16px 0;
   }
   .icon svg{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
   }
   .button{
     width: 100%;
