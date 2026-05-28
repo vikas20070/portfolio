@@ -1413,21 +1413,23 @@ transform:translateY(-5px);
   }
   .r1 h3{
     padding-left: 0;
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
   }
   .r2{
     padding: 0;
   }
   .r2 p{
-    font-size: 14px;
+    font-size: 18px;
     padding: 8px 16px;
     text-align: center;
   }
   .row2{
     width: 100%;
     height: auto;
-    flex-direction: column;
+    /* flex-direction: column; */
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 16px;
     padding: 16px;
     box-sizing: border-box;
@@ -1442,7 +1444,8 @@ transform:translateY(-5px);
   }
   .r3{
     width: 100%;
-    padding: 0;
+    /* padding: 0; */
+    padding-right: 10px;
   }
 
   /* About section responsive */

@@ -30,7 +30,7 @@ const rightSkills = skills.slice(3,6);
             <FaHtml5 size={90} color="#E44D26" style={{
              
               }} />
-              </div>
+          </div>
               <div className="icon-box">
             <FaCss3Alt size={90} color="#1197f7" style={{
              
