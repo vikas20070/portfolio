@@ -1,5 +1,5 @@
 
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaLaptopCode } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact,  } from "react-icons/fa";
 import vikas from "./vikas.png";
 
 function Home() {
