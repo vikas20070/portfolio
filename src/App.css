@@ -297,6 +297,136 @@ text-align:center;
   .hamburger {
     display: flex;
   }
+
+  /* Tablet Skills Responsive */
+  .skill {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .row1 {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .r1, .r2 {
+    max-width: 100%;
+    height: auto;
+    padding: 0 !important;
+  }
+
+  .r1 h3 {
+    padding-left: 0;
+    font-size: 24px;
+  }
+
+  .r2 p {
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  .row2 {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .icon-box {
+    padding: 18px;
+  }
+
+  .skill-icon {
+    font-size: 70px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .row3 {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    padding: 20px 0;
+  }
+
+  .r3 {
+    max-width: 100%;
+    height: auto;
+    padding: 0 30px;
+  }
+
+  .progress-bar-container {
+    width: 100%;
+  }
+
+  .skill-label {
+    font-size: 15px;
+  }
+}
+
+/* ==================== 768px - Tablets ==================== */
+@media screen and (max-width: 768px) {
+  .skill {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .row1 {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .r1, .r2 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .r1 h3 {
+    padding-left: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .r2 p {
+    padding-left: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .row2 {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .icon-box {
+    padding: 16px;
+  }
+
+  .skill-icon {
+    font-size: 65px;
+    width: 65px;
+    height: 65px;
+  }
+
+  .row3 {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  .r3 {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  .progress-bar-container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -731,6 +861,42 @@ background-color: white;
   padding-right: 50px;
   box-sizing: border-box;
 }
+
+/* Responsive Skill Item Styles */
+.skill-icon {
+  font-size: 90px;
+  width: 90px;
+  height: 90px;
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.progress-bar-container {
+  background: #d5d9e1;
+  height: 8px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: #38bdf8;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
 .project{
    width:100%;
   max-width:1050px;
@@ -1193,6 +1359,46 @@ transform:translateY(-5px);
   .r1 h3 {
     font-size: 18px;
   }
+
+  .r1 h3, .r2 p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .row2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .icon-box {
+    padding: 10px;
+  }
+
+  .skill-icon {
+    font-size: 45px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .r3 {
+    padding: 12px !important;
+  }
+
+  .skill-item {
+    margin-bottom: 10px;
+  }
+
+  .skill-label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .progress-bar-container {
+    width: 100%;
+    height: 6px;
+  }
   
   .project {
     padding: 16px 0;
@@ -1413,39 +1619,63 @@ transform:translateY(-5px);
   }
   .r1 h3{
     padding-left: 0;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
+    line-height: 1.4;
   }
   .r2{
     padding: 0;
   }
   .r2 p{
-    font-size: 18px;
+    font-size: 14px;
     padding: 8px 16px;
     text-align: center;
+    line-height: 1.5;
   }
   .row2{
     width: 100%;
     height: auto;
-    /* flex-direction: column; */
-     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
     padding: 16px;
     box-sizing: border-box;
     align-items: center;
+    justify-items: center;
+  }
+  .icon-box{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-icon {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
   }
   .row3{
-    width: 300px;
+    width: 100%;
     height: auto;
     flex-direction: column;
-    padding: 16px;
+    padding: 0;
     box-sizing: border-box;
   }
   .r3{
-    width: 300px;
-    /* padding: 0; */
-    padding-right: 10px;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .skill-item {
+    margin-bottom: 12px;
+  }
+  .skill-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .progress-bar-container {
+    width: 100%;
+    height: 8px;
   }
 
   /* About section responsive */

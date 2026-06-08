@@ -27,78 +27,46 @@ const rightSkills = skills.slice(3,6);
         </div>
         <div className="row2">
           <div className="icon-box">
-            <FaHtml5 size={90} color="#E44D26" style={{
-             
-              }} />
+            <FaHtml5 className="skill-icon" color="#E44D26" />
           </div>
-              <div className="icon-box">
-            <FaCss3Alt size={90} color="#1197f7" style={{
-             
-              }} />
-              </div >
-              <div className="icon-box">
-            <FaJs size={90} color="#F7DF1E" style={{
-                 
-              }} />
-              </div>
-              <div className="icon-box">
-            <FaReact size={90} color="#02c5f5" style={{
-              
-              }} />
-              </div>
-              <div className="icon-box">
-           <FaWordpress size={90} color="#10668d" style={{
-             
-              }} />
-              </div>
-              <div className="icon-box">
-           <SiCplusplus size={90} color="#135688" style={{
-              }} />
-              </div>
+          <div className="icon-box">
+            <FaCss3Alt className="skill-icon" color="#1197f7" />
+          </div>
+          <div className="icon-box">
+            <FaJs className="skill-icon" color="#F7DF1E" />
+          </div>
+          <div className="icon-box">
+            <FaReact className="skill-icon" color="#02c5f5" />
+          </div>
+          <div className="icon-box">
+            <FaWordpress className="skill-icon" color="#10668d" />
+          </div>
+          <div className="icon-box">
+            <SiCplusplus className="skill-icon" color="#135688" />
+          </div>
         </div>
         <div className="row3">
             <div className="r3">
             {leftSkills.map((item, index) => (
-  <div key={index} style={{ marginBottom: "15px" }}>
-
-    <p style={{ display:"flex", justifyContent:"space-between", color:"white" }}>
+  <div key={index} className="skill-item">
+    <p className="skill-label">
       {item.name} <span>{item.value}%</span>
     </p>
-
-    <div style={{
-      background:"#d5d9e1",
-      height:"8px",
-      width:"420px",
-      borderRadius:"5px"
-    }}>
-      <div style={{
-        width: item.value + "%",
-        background:"#38bdf8",
-        height:"100%",
-        borderRadius:"5px"
-      }}></div>
+    <div className="progress-bar-container">
+      <div className="progress-bar-fill" style={{ width: item.value + "%" }}></div>
     </div>
-
   </div>
 ))}
      </div>
             <div className="r3">
 {rightSkills.map((item, index) => (
-  <div key={index} style={{ marginBottom: "15px" }}>
-
-    <p style={{ display:"flex", justifyContent:"space-between", color:"white" }}>
+  <div key={index} className="skill-item">
+    <p className="skill-label">
       {item.name} <span>{item.value}%</span>
     </p>
-
-    <div style={{ background:"#d7dde7",  width:"420px",height:"8px", borderRadius:"5px" }}>
-      <div style={{
-        width: item.value + "%",
-        background:"#38bdf8",
-        height:"100%",
-        borderRadius:"5px"
-      }}></div>
+    <div className="progress-bar-container">
+      <div className="progress-bar-fill" style={{ width: item.value + "%" }}></div>
     </div>
-
   </div>
 ))}
             </div>
