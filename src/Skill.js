@@ -1,77 +1,112 @@
-import { FaHtml5, FaCss3Alt, FaJs} from "react-icons/fa";
-import { FaReact, FaWordpress } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
+import { useEffect, useState } from "react";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaBootstrap,
+  FaGithub,
+  FaMobileAlt,
+} from "react-icons/fa";
+
 function Skill() {
-    const skills = [
-  { name: "HTML", value: 90 },
-  { name: "CSS", value: 85 },
-  { name: "JavaScript", value: 80 },
-  { name: "React", value: 75 },
-  { name: "WordPress", value: 70 },
-  { name: "C++", value: 65 }
-];
-const leftSkills = skills.slice(0,3);
-const rightSkills = skills.slice(3,6);
-   return (
-    <div id="skill" className="skill">
-        <div className="row1">
-          <div className="r1">
-            <h3>My Professional <br />
-                background skill and <br /> Accomplishment
-            </h3>
-          </div>
-          <div className="r2">
-            <p>I have experience in building modern <br />and responsive
-              web applications using<br /> frontend technologies.</p>
-          </div>
+  const skills = [
+    {
+      name: "HTML",
+      value: 92,
+      icon: <FaHtml5 />,
+      color: "#E44D26",
+    },
+    {
+      name: "CSS",
+      value: 88,
+      icon: <FaCss3Alt />,
+      color: "#1572B6",
+    },
+    {
+      name: "JavaScript",
+      value: 84,
+      icon: <FaJs />,
+      color: "#F7DF1E",
+    },
+    {
+      name: "React",
+      value: 80,
+      icon: <FaReact />,
+      color: "#61DAFB",
+    },
+    {
+      name: "Bootstrap",
+      value: 76,
+      icon: <FaBootstrap />,
+      color: "#7952B3",
+    },
+    {
+      name: "Git / GitHub",
+      value: 82,
+      icon: <FaGithub />,
+      color: "#FFFFFF",
+    },
+    {
+      name: "Responsive Design",
+      value: 90,
+      icon: <FaMobileAlt />,
+      color: "#22D3EE",
+    },
+  ];
+
+  const [fillWidths, setFillWidths] = useState(skills.map(() => 0));
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFillWidths(skills.map((skill) => skill.value));
+    }, 120);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <section id="skill" className="skills-section">
+      <div className="skills-header">
+        <div>
+          <p className="skills-eyebrow">Technologies I Use</p>
+          <h2 className="skills-title">My Skills</h2>
         </div>
-        <div className="row2">
-          <div className="icon-box">
-            <FaHtml5 className="skill-icon" color="#E44D26" />
-          </div>
-          <div className="icon-box">
-            <FaCss3Alt className="skill-icon" color="#1197f7" />
-          </div>
-          <div className="icon-box">
-            <FaJs className="skill-icon" color="#F7DF1E" />
-          </div>
-          <div className="icon-box">
-            <FaReact className="skill-icon" color="#02c5f5" />
-          </div>
-          <div className="icon-box">
-            <FaWordpress className="skill-icon" color="#10668d" />
-          </div>
-          <div className="icon-box">
-            <SiCplusplus className="skill-icon" color="#135688" />
-          </div>
+      </div>
+
+      <div className="skills-grid">
+        <div className="skills-card-panel">
+          {skills.map((skill, index) => (
+            <article key={skill.name} className="skill-card">
+              <div
+                className="skill-card-icon"
+                style={{ boxShadow: `0 0 30px ${skill.color}33` }}
+              >
+                {skill.icon}
+              </div>
+              <div className="skill-card-info">
+                <h3>{skill.name}</h3>
+                <div className="skill-progress">
+                  <div className="skill-progress-track">
+                    <div
+                      className="skill-progress-fill"
+                      style={{ width: `${fillWidths[index]}%`, background: `linear-gradient(135deg, ${skill.color}, #7c3aed)` }}
+                    ></div>
+                  </div>
+                  <span className="skill-value">{skill.value}%</span>
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
-        <div className="row3">
-            <div className="r3">
-            {leftSkills.map((item, index) => (
-  <div key={index} className="skill-item">
-    <p className="skill-label">
-      {item.name} <span>{item.value}%</span>
-    </p>
-    <div className="progress-bar-container">
-      <div className="progress-bar-fill" style={{ width: item.value + "%" }}></div>
-    </div>
-  </div>
-))}
-     </div>
-            <div className="r3">
-{rightSkills.map((item, index) => (
-  <div key={index} className="skill-item">
-    <p className="skill-label">
-      {item.name} <span>{item.value}%</span>
-    </p>
-    <div className="progress-bar-container">
-      <div className="progress-bar-fill" style={{ width: item.value + "%" }}></div>
-    </div>
-  </div>
-))}
-            </div>
-        </div>
-    </div>
-   );
+      </div>
+
+      <div className="skills-background">
+        <span className="skills-glow skills-glow-blue" />
+        <span className="skills-glow skills-glow-purple" />
+        <span className="skills-glow skills-glow-soft" />
+      </div>
+    </section>
+  );
 }
+
 export default Skill;

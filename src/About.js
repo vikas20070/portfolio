@@ -1,68 +1,127 @@
-import web from "./web.png"; 
-import Ui from "./Ui.png"; 
-import react from "./react.png"; 
-import frontend from "./frontend.png"; 
-import education from "./education.png";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"; 
+import vikas from "./vikas.png";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaGithub,
+  FaLinkedin,
+  FaCode,
+  FaPaintBrush,
+  FaReact,
+  FaLaptopCode,
+  FaGraduationCap,
+} from "react-icons/fa";
+
 function About() {
-    return(
-        <div  id="about"  className="main1">
-            <div className="image">
-            <div className="men"></div>
-            <div className="icon">
-         <FaFacebook size={30} />
-         <FaInstagram size={30} />
-        <FaTwitter size={30} />
-            </div>
-            <div className="button">
-                <button className="btn3"><a href="/resume.pdf" target="_blank" rel="noreferrer">Download CV</a></button>
-                
-            </div>
-            </div>
-            <div className="con1">
-             <div>
-              <h2>About me</h2>
-              <hr/>
-              <p>I'm Vikas Patidar, a passionate Frontend Developer who loves
-                creating<br /> modern and responsive websites. I enjoy turning ideas
-                  into beautiful and <br />functional user interfaces.</p>
-              <p>My main focus is building clean UI using HTML, CSS,
-                 JavaScript and React.</p>
-             </div>
-            <hr/>
-              <div className="mainbox">
-                <div className="box">
-                    <img src={web} alt="web"/>
-                    <h3>Web Development</h3>
-                </div>
-                <div className="box">
-                    <img src={Ui} alt="Ui"/>
-                    <h3>UI/UX</h3>
-                </div>
-                <div className="box">
-                    <img src={react} alt="react"/>
-                    <h3>React Specailist</h3>
-                </div> 
-              </div>
-               <h3>Education & Experience</h3>
-               <div className="edu">
-                 <div className="box1">
-                    <div className="log"><img src={frontend} alt="frontend"/></div>
-                    <div className="info">
-                        <p>Fontende Developmen<br /> HTML,CSS,JAVA script React JS</p>
-                    </div>
-                 </div>
-                 <div className="box1">
-                    <div className="log"><img src={education} alt="education"/></div>
-                    <div className="info">
-                       <p>Degree : BCA <br />
-                        Collage : SCSIT DAVV <br />
-                        Passout : 2023 to 2026</p> 
-                    </div>
-                 </div>
-               </div>
-            </div>
+  return (
+    <section id="about" className="about-section">
+      <div className="about-grid">
+        <div className="about-copy">
+          <span className="about-eyebrow">ABOUT ME</span>
+          <h2 className="about-title">
+            Hi, I’m <span>Vikas Patidar</span>
+          </h2>
+          <p className="about-subtitle">
+            Professional frontend developer building immersive, futuristic user
+            experiences with clean, responsive code.
+          </p>
+          <p className="about-description">
+            I specialize in modern frontend development using HTML, CSS,
+            JavaScript and React to deliver polished interfaces, strong
+            performance and high-impact visuals.
+          </p>
+
+          <div className="tech-pill-grid">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+
+          <div className="social-row">
+            <a href="https://linkedin.com" className="social-btn" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com" className="social-btn" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <FaGithub />
+            </a>
+            <a href="https://facebook.com" className="social-btn" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <FaFacebook />
+            </a>
+            <a href="https://instagram.com" className="social-btn" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="https://twitter.com" className="social-btn" target="_blank" rel="noreferrer" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+          </div>
         </div>
-    )
+
+        <div className="about-image-panel">
+          <div className="image-card">
+            <div className="image-glow"></div>
+            <div className="image-frame">
+              <img src={vikas} alt="Vikas Patidar" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="feature-grid">
+        <article className="feature-card">
+          <div className="feature-icon">
+            <FaLaptopCode />
+          </div>
+          <h3>Web Development</h3>
+          <p>Custom responsive solutions with modern frontend architecture.</p>
+        </article>
+        <article className="feature-card">
+          <div className="feature-icon feature-icon-secondary">
+            <FaPaintBrush />
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Futuristic visual systems with polished interactions and layouts.</p>
+        </article>
+        <article className="feature-card">
+          <div className="feature-icon feature-icon-accent">
+            <FaReact />
+          </div>
+          <h3>React Specialist</h3>
+          <p>Component-driven development with React, hooks, and performance.</p>
+        </article>
+      </div>
+
+      <div className="timeline-panel">
+        <div className="timeline-card timeline-experience">
+          <div className="timeline-header">
+            <FaCode />
+            <div>
+              <h4>Frontend Development</h4>
+              <span>2023 - Present</span>
+            </div>
+          </div>
+          <p>
+            Built modern websites and web apps using React, responsive design,
+            and neon-inspired interfaces for premium frontend experiences.
+          </p>
+        </div>
+
+        <div className="timeline-card timeline-education">
+          <div className="timeline-header">
+            <FaGraduationCap />
+            <div>
+              <h4>BCA Degree</h4>
+              <span>SCSIT DAVV • 2023 - 2026</span>
+            </div>
+          </div>
+          <p>
+            Completed a strong foundation in software development, UI design,
+            and frontend engineering with a focus on user-centered systems.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
+
 export default About;
