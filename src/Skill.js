@@ -62,7 +62,7 @@ function Skill() {
       setFillWidths(skills.map((skill) => skill.value));
     }, 120);
     return () => clearTimeout(timer);
-  }, []);
+  }, [skills]);
 
   return (
     <section id="skill" className="skills-section">
