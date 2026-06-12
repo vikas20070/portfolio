@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { MdEmail, MdLocationOn } from "react-icons/md";
-import { FaPhoneAlt, FaWhatsapp, FaLinkedin, FaInstagram, FaUserAlt, FaRegFileAlt, FaRegCommentDots, FaPaperPlane } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaLinkedin, FaInstagram,  FaUserAlt, FaRegFileAlt, FaRegCommentDots, FaPaperPlane } from "react-icons/fa";
 
 const contactItems = [
   {
