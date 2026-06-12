@@ -56,31 +56,44 @@ function Skill() {
     },
   ], []);
 
-  const [fillWidths, setFillWidths] = useState(
-    skills.map(() => 0)
-  );
+  const [fillWidths, setFillWidths] = useState([]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setFillWidths(skills.map((skill) => skill.value));
+      setFillWidths(
+        skills.map((skill) => skill.value)
+      );
     }, 120);
 
     return () => clearTimeout(timer);
-  }, [skills]);
+
+  }, []); // dependency removed
 
   return (
     <section id="skill" className="skills-section">
+
       <div className="skills-header">
         <div>
-          <p className="skills-eyebrow">Technologies I Use</p>
-          <h2 className="skills-title">My Skills</h2>
+          <p className="skills-eyebrow">
+            Technologies I Use
+          </p>
+
+          <h2 className="skills-title">
+            My Skills
+          </h2>
         </div>
       </div>
 
       <div className="skills-grid">
         <div className="skills-card-panel">
+
           {skills.map((skill, index) => (
-            <article key={skill.name} className="skill-card">
+
+            <article
+              key={skill.name}
+              className="skill-card"
+            >
+
               <div
                 className="skill-card-icon"
                 style={{
@@ -91,26 +104,33 @@ function Skill() {
               </div>
 
               <div className="skill-card-info">
+
                 <h3>{skill.name}</h3>
 
                 <div className="skill-progress">
+
                   <div className="skill-progress-track">
+
                     <div
                       className="skill-progress-fill"
                       style={{
-                        width: `${fillWidths[index]}%`,
+                        width: `${fillWidths[index] || 0}%`,
                         background: `linear-gradient(135deg, ${skill.color}, #7c3aed)`,
                       }}
                     ></div>
+
                   </div>
 
                   <span className="skill-value">
                     {skill.value}%
                   </span>
+
                 </div>
               </div>
             </article>
+
           ))}
+
         </div>
       </div>
 
@@ -119,6 +139,7 @@ function Skill() {
         <span className="skills-glow skills-glow-purple" />
         <span className="skills-glow skills-glow-soft" />
       </div>
+
     </section>
   );
 }
