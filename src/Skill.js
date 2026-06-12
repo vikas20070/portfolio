@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -10,7 +10,8 @@ import {
 } from "react-icons/fa";
 
 function Skill() {
-  const skills = [
+
+  const skills = useMemo(() => [
     {
       name: "HTML",
       value: 92,
@@ -53,14 +54,17 @@ function Skill() {
       icon: <FaMobileAlt />,
       color: "#22D3EE",
     },
-  ];
+  ], []);
 
-  const [fillWidths, setFillWidths] = useState(skills.map(() => 0));
+  const [fillWidths, setFillWidths] = useState(
+    skills.map(() => 0)
+  );
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setFillWidths(skills.map((skill) => skill.value));
     }, 120);
+
     return () => clearTimeout(timer);
   }, [skills]);
 
@@ -79,20 +83,30 @@ function Skill() {
             <article key={skill.name} className="skill-card">
               <div
                 className="skill-card-icon"
-                style={{ boxShadow: `0 0 30px ${skill.color}33` }}
+                style={{
+                  boxShadow: `0 0 30px ${skill.color}33`,
+                }}
               >
                 {skill.icon}
               </div>
+
               <div className="skill-card-info">
                 <h3>{skill.name}</h3>
+
                 <div className="skill-progress">
                   <div className="skill-progress-track">
                     <div
                       className="skill-progress-fill"
-                      style={{ width: `${fillWidths[index]}%`, background: `linear-gradient(135deg, ${skill.color}, #7c3aed)` }}
+                      style={{
+                        width: `${fillWidths[index]}%`,
+                        background: `linear-gradient(135deg, ${skill.color}, #7c3aed)`,
+                      }}
                     ></div>
                   </div>
-                  <span className="skill-value">{skill.value}%</span>
+
+                  <span className="skill-value">
+                    {skill.value}%
+                  </span>
                 </div>
               </div>
             </article>
